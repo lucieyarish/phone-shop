@@ -27,6 +27,7 @@ public class PhoneDto {
     @PositiveOrZero(message = "Price must be greater than or equal to 0.")
     private Integer price;
 
+    @NotBlank(message = "Image is required.")
     private String image;
 
     public Phone toPhone() {
