@@ -40,7 +40,7 @@ To test the application, open Postman on your machine and paste the following JS
 ```
 
 ## Documentation<a name="documentation"></a>
-To view API documentation, run the app locally and navigate to [http://localhost:8080/swagger-ui/index.html#/].
+To view API documentation, run the app locally and navigate to **http://localhost:8080/swagger-ui/index.html#/**
 
 
 ## Tech Stack and Tools Used<a name="techstack"></a>
