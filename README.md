@@ -8,7 +8,7 @@
 
 ## About<a name="about"></a>
 
-RESTful API that enables phone shop upload products to their warehouse.
+RESTful API that enables a mobile phone e-shop to upload products to their warehouse.
 
 This project was built as a part of [Cleevio](https://www.cleevio.com/)'s backend Java developer interview process. 
 
