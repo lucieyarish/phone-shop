@@ -22,13 +22,13 @@ mvn install
 ```
 
 ### Run and Test the Application
-As MySQL is not Dockerized yet, change credentials in **application.properties** to your username and password so that you can connect to the MySQL server. Then run the application with the following command:
+As MySQL is not Dockerized yet, change credentials in the **application.properties** file to your username and password so that you can connect to the MySQL server. Then run the application with the following command:
 
 ```shell
 mvn spring-boot:run
 ```
 
-To test the application, open Postman application on your machine, paste the JSON sample data below to the request body and send POST request to **localhost:8080/phones**
+To test the application, open the Postman app on your machine, paste the JSON sample data below to the request body and send POST request to **localhost:8080/phones**
 ```json
 {
   "brand": "Samsung",
