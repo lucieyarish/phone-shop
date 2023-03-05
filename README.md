@@ -31,11 +31,11 @@ mvn spring-boot:run
 To test the application, open Postman on your machine and paste the following JSON sample data to request body and send POST request to **localhost:8080/phones**
 ```json
 {
-"brand": "Samsung",
-"operating_system": "Android",
-"model": "Galaxy S23 Ultra",
-"price": "30000", // integer
-"image": "R0lGODlhAQABAIAAAAUEBA" // base64 picture
+  "brand": "Samsung",
+  "operating_system": "Android",
+  "model": "Galaxy S23 Ultra",
+  "price": "30000",
+  "image": "R0lGODlhAQABAIAAAAUEBA"
 }
 ```
 
