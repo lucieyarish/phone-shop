@@ -11,6 +11,7 @@ A RESTful API that enables phone shop upload products to their warehouse.
 This project was built as a part of [Cleevio](https://www.cleevio.com/)'s backend Java developer interview process. 
 
 ## Prerequisites<a name="prerequisites"></a>
+* Java 17
 
 ## Tech Stack and Tools Used<a name="techstack"></a>
 ### Tech Stack
