@@ -4,5 +4,5 @@ import dev.lucieyarish.phoneshopdemo.models.entities.Phone;
 
 public interface PhoneService {
 
-    Phone create(Phone phone);
+    void create(Phone phone);
 }

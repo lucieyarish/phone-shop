@@ -12,7 +12,7 @@ public class PhoneServiceImpl implements PhoneService {
     private final PhoneRepository phoneRepository;
 
     @Override
-    public Phone create(Phone phone) {
-        return phoneRepository.save(phone);
+    public void create(Phone phone) {
+        phoneRepository.save(phone);
     }
 }

@@ -1,5 +1,6 @@
 package dev.lucieyarish.phoneshopdemo.models.dtos;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import dev.lucieyarish.phoneshopdemo.models.entities.Phone;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
@@ -16,8 +17,9 @@ public class PhoneDto {
     @NotBlank(message = "Brand is required.")
     private String brand;
 
+    @JsonProperty("operating_system")
     @NotBlank(message = "Operating system is required.")
-    private String operating_system;
+    private String operatingSystem;
 
     @NotBlank(message = "Model is required.")
     private String model;
@@ -35,7 +37,7 @@ public class PhoneDto {
 
         return new Phone()
                 .setBrand(brand)
-                .setOperatingSystem(operating_system)
+                .setOperatingSystem(operatingSystem)
                 .setModel(model)
                 .setPrice(price)
                 .setImage(convertedImg);

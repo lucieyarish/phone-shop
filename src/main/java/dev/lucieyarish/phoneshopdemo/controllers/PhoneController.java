@@ -1,7 +1,6 @@
 package dev.lucieyarish.phoneshopdemo.controllers;
 
 import dev.lucieyarish.phoneshopdemo.models.dtos.PhoneDto;
-import dev.lucieyarish.phoneshopdemo.models.entities.Phone;
 import dev.lucieyarish.phoneshopdemo.services.PhoneService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
@@ -19,9 +18,9 @@ public class PhoneController {
     private final PhoneService phoneService;
 
     @PostMapping(value = "/phones", consumes = MediaType.ALL_VALUE)
-    public ResponseEntity<Phone> createPhone(@Valid @RequestBody PhoneDto phoneDto) {
-        Phone createdPhone = phoneService.create(phoneDto.toPhone());
+    public ResponseEntity<?> createPhone(@Valid @RequestBody PhoneDto phoneDto) {
+        phoneService.create(phoneDto.toPhone());
 
-        return new ResponseEntity<>(createdPhone, HttpStatus.CREATED);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 }
